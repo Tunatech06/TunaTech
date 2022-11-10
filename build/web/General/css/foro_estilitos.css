@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+    background:  #fff;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+    background: #FFCD48;
+}
+
+.navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+    background: #1D2F3D;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+    height: 140vh;
+    margin-bottom: -50px;
+}
+
+.contenedor-imagen img {
+    width: 90%;
+    height: 90%;
+    margin-top: 90px;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: 58px bottom;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main .contenido p {
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: #525151;
+}
+
+main .contenido .titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    padding-top: 40px;
+    font-size: 19px;
+}
+
+main .contenido .fecha {
+    font-size: 14px;
+    color: #B5B5B5;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+    min-width: 42%;
+    margin: 20px 40px 10px -70px;
+    height: 65vh;
+    background:  rgb(206,212,218);
+    padding: 20px;
+    border-radius: 5px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+aside .titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+
+aside .indice a {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFCD48;
+}
+/**  ----------------------------------------------------------- FORMULARIO ------------------------**/
+.info{
+    border-radius: 8px;
+    border: 0;
+    margin: 10px;
+    height: 35px;
+    padding: 7px;
+    width: 350px;
+    background-color: #0C1821;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.postInput{
+    border-radius: 3px;
+    border: 0;
+    margin: 7px;
+    height: 35px;
+    padding: 7px;
+    width: 90%;
+    background-color: rgb(248,248,250);
+    text-align: left;
+    font-size: 11px;
+}
+.info textArea{
+    max-width: 350px;
+    border: none;
+}
+.botoncitos{
+    transition: .8s;
+    color: white;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+.botoncitos:hover{
+    color:  white;
+    padding: 6px;
+    background-color:  ;
+    transition: .8s;
+    border-radius: 5px;
+    width: 100px;
+    height: 36px;
+}
+
+/* * ============================== */
+/* * ========== POST ============ */
+/* * ============================== */
+
+.post{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 25px;
+    margin: 18px;
+    border-radius: 6px;
+}
+
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+    .navbar .contenedor {
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        width: auto;
+        flex: 1;
+    }
+
+    .contenedor-imagen {
+        height: 50vh;
+    }
+
+    main .contenedor {
+        flex-direction: column;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro Copernicus System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../General/css/registro.css" ><!--  -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+        <link rel="shorcut icon" href="../General/img/logos/Newlogo.png">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="link" ><img src="../General/img/logos/Newlogo.png" alt="logoCS" class="imglogo"/></a> <a href="../index.html" class="link" ><h1>Copernicus System</h1></a>
+            <nav>
+                <ul>
+                    <a href="Login.jsp" class="link" >Iniciar Sesión</a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="div1">
+            <center>
+                <form name="form" action="Info.jsp" method="post" > <!-- la pagina redirigira al inicio de sesion index.htm -->
+                    <div class="Principal">
+                        <h1>Registrate</h1>
+                        <input class="Registro" type="text" id="TxtNombre" name="TxtUsu" placeholder="Ingrese su Nombre">
+                        <p><input class="Registro" type="email" id="TxtCorreo" name="TxtMail" placeholder="Ingrese su correo">
+                        <p><input class="Registro" type="password" id="TxtPass" name="TxtPass" placeholder="Ingrese su contraseña"><br> <br>
+                        <p> Únete a Copernicus System como:
+                        <select class="Registro tipo" id="SelectUsu" name="SelectUsu" >
+                                <option>Seleccionar</option>
+                                <option value="Alumno" >Alumno</option>
+                                <option value="Docente" >Docente</option>
+                                <option value="Indep" >Independiente</option>
+                            </select>
+
+                        <p><input class="Registro" type="submit" id="btnRegis" name="btnRegis" value="Registrarse"></p>
+                        <p>Ya tengo una cuenta   <a href="Login.jsp">Iniciar Sesión </a></p>
+
+                    </div>
+                </form>
+            </center>
+        </div>
+        <div class="imagenLogin">
+        <img src="img/imgRegis.png" alt="imagenRegis" class="imgRegis">
+    </div>
+        
+        
+    </body>
+    
+<footer>
+    <div class="footer1">
+        <p>
+            Copernicus System
+        </p>
+    </div>
+    <div class="footer2">
+        <p>Equipo 6 Tuna tech</p>
+        <p>Integrantes</p>
+        <p>Aguilera García Christopher Emmanuel
+        <p>Cisneros Mendoza Gerardo Uriel</p>
+        <p>García López Arturo</p>
+        <p> Reyes Barquera Yazmin</p>
+
+    </div>
+</footer>
+    
+</html>
