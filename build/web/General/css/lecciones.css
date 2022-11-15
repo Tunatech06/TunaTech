@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+}
+
+body {
+    background:  #000;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.menu{
+    background: #150B28;
+    color:  white;
+    font-family: 'Poppins', sans-serif;
+}
+.menu a{
+    color: white;
+}
+.menu a:hover{
+    font-size: 16px;
+}
+
+.Principal {
+    flex-direction: column;
+    top: 38%; left: 37%;
+     z-index: 0;
+    align-items: center;
+    justify-content: center;
+    background:  none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+}
+.frame1{
+    z-index: 1;
+}
+
+.Principal h1 {
+    font-size: 80px;
+}
+
+.Principal p {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #113CFC;
+}
+
+.menu{
+    background: #fff;
+    height: 70px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    
+    overflow: hidden;
+}
+.menu a {
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+
+.link2:hover{
+    background: #140152;
+    color: white;
+    transition: .9s;
+    font-size: 19px;
+}
+.link3:hover{
+    background: #22007C;
+    color: white;
+    transition: .9s; font-size: 19px;
+}
+.link4:hover{
+    background: #0D00A4;
+    color: white;
+    transition: .9s; font-size: 19px;
+}
+
+.menu .indicador {
+    width: 0px;
+    height: 7px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+    /* transform: translate(-500px); */
+}
+
+.seccion {
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.seccion .card {
+    background: #fff;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.seccion p {
+    line-height: 38px;
+    margin-bottom: 40px;
+    color: #494949;
+    font-size: 15px; line-height:  22px;
+}
+
+.seccion img {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+.secciones{
+    background: #1E222D;
+}
+
+
+@media screen and (max-width: 800px) {
+    menu a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    menu a {
+        font-size: 12px;
+    }
+}
+
+.logobarra{
+    width: 33px;
+    height:33px;
+    padding: 0;
+    margin: 0;
+}
+.card dos{
+    display: table;
+    align-items:  flex-end;
+}
+
+.imagenKepler{
+    width: 40%;
+    height: 30%;
+}

@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+    
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #2e0169;
+}
+.link:hover{
+    background-color: #311B93;
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 3px;
+    transition: .6s;
+}
+.link{
+    font-size: 13px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url(General/img/fondos/fondoC.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 150px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9807db;
+    color: #fff;
+    text-decoration: none;
+    background: #9807db;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 100px 0;
+    background: #303030;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: centers;
+}
+
+.box-container .box {
+    height: 270px;
+    width: 270px;
+    background: #171717;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    margin: 20px;
+}
+
+.box-container .box i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9807db;
+    font-size: 25px;
+    margin: 10px 0;
+
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9807db;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.price {
+    background: url(General/img/img_conocenos/sistemasolar.gif) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.about {
+    background: #303030;
+    padding: 50px 0;
+}
+
+.box-container2{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box {
+    height: 280px;
+    width: 300px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    background: #171717;
+    margin: 20px 20px;
+}
+
+.box-container2 .box img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 6px solid #e91e63;
+}
+
+.box-container2 .box h3 {
+    font-size: 20px;
+    color: #e91e63;
+    padding-top: 10px;
+}
+
+.box-container2 .box p {
+
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+}
+
+.box-container2 .box .stars i {
+    font-size: 15px;
+    color: #e91e63;
+}
+
+.contact {
+    padding: 50px 0;
+    background: #171717;
+}
+
+
+.footer-section{
+    display: flex;
+
+}
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/** seccion animada **/
+.seccion1{
+    background-color: white;
+    height: 90vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: hidden;
+    top: 40%;
+}
+
+.seccion1::before{
+    content: "";
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background-image: url("General/img/pc_3.JPG");
+    background-size:  cover;
+    
+}
